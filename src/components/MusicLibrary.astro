@@ -1,0 +1,42 @@
+
+<section class="music-library-section">
+
+  <div class="music-library-animation">
+    <div id="music-notes-lottie"></div>
+    <div id="walking-cycle-lottie"></div>
+  </div>
+
+  <div class="music-library-content">
+
+    <h2>
+      Biblioteca musical personal
+    </h2>
+
+    <p>
+      Controla tu música.
+      Crea tus propias playlists.
+      Comparte tus colecciones favoritas.
+      Mantén el control total de tus datos
+      y disfruta de tu biblioteca musical
+      desde cualquier dispositivo.
+    </p>
+
+  </div>
+
+</section>
+
+<script type="module">
+import { setupLottie } from "../scripts/lottieHelper";
+
+setupLottie(
+    "music-notes-lottie",
+    "/animations/MusicNotes.json"
+);
+
+setupLottie(
+    "walking-cycle-lottie",
+    "/animations/WalkingCycle.json"
+);
+</script>
+
+

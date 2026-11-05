@@ -1,0 +1,86 @@
+---
+---
+
+<nav>
+  <a href="/" class="brand">
+    <img src="/Nuberd-Logo.png" alt="NubeRD Logo" class="logo-img" />
+  </a>
+
+  <button id="menu-toggle" class="hamburger">
+    ☰
+  </button>
+
+  <div id="mobile-menu" class="mobile-menu">
+
+    <button id="close-menu" class="close-menu">
+      ✕
+    </button>
+
+    <a href="/">Inicio</a>
+    <a href="/servicios">Servicios</a>
+    <a href="/soluciones">Soluciones</a>
+    <a href="/blog">Blog</a>
+    <a href="/contacto">Contacto</a>
+
+    <a href="/solicitar-acceso" class="mobile-cloud-btn">
+      Crear tu nube
+    </a>
+
+  </div>
+
+  <ul class="desktop-menu">
+
+    <li>
+      <a href="/">Inicio</a>
+    </li>
+
+    <li>
+      <a href="/servicios">Servicios</a>
+    </li>
+
+    <li>
+      <a href="/soluciones">Soluciones</a>
+    </li>
+
+    <li>
+      <a href="/blog">Blog</a>
+    </li>
+
+    <li>
+      <a href="/contacto">Contacto</a>
+    </li>
+
+  </ul>
+
+  <a href="/solicitar-acceso" class="cloud-btn desktop-btn">
+    Crear tu nube
+  </a>
+
+</nav>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const menuToggle =
+    document.getElementById("menu-toggle");
+
+  const closeMenu =
+    document.getElementById("close-menu");
+
+  const mobileMenu =
+    document.getElementById("mobile-menu");
+
+  menuToggle?.addEventListener("click", () => {
+    mobileMenu?.classList.add("active");
+    document.body.classList.add("menu-open");
+  });
+
+  closeMenu?.addEventListener("click", () => {
+    mobileMenu?.classList.remove("active");
+    document.body.classList.remove("menu-open");
+  });
+
+});
+
+</script>
